@@ -1,0 +1,14 @@
+all:
+  children:
+    elasticsearch:
+      hosts:
+        192.168.56.109
+    kibana:
+      hosts:
+        192.168.56.110
+    logstash:
+      hosts:
+        192.168.56.113
+vars:
+  ansible_user: erwin
+  ansible_ssh_private_key_file: /home/erwin/.ssh/id_rsa
